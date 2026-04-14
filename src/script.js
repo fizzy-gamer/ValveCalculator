@@ -29,7 +29,7 @@ function NewSplit(Name, Machines) {
   MachineInput.step = "1";
   MachineInput.min = "0";
   if (Machines != 0) {MachineInput.value = Machines;};
-  MachineInput.addEventListener("input", function(){CurrentSplits[Name] = parseFloat(MachineInput.value)!= NaN ? parseFloat(MachineInput.value): 0; UpdatePercentages();});
+  MachineInput.addEventListener("input", function(){CurrentSplits[Name] = (parseFloat(MachineInput.value) >0 ? parseFloat(MachineInput.value): 0); UpdatePercentages();});
   Button.appendChild(MachineInput);
 }
 
