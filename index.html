@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Machine Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/fizzy-gamer/ValveCalculator/refs/heads/main/ValveIcon.png" />
+    <meta property="og:title" content="Valve Calculator" />
+    <meta property="og:description" content="Valve Control Calculator app for Industrialist Roblox."/>
+    <meta property="og:site_name" content="GitHub Pages" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/fizzy-gamer/ValveCalculator/refs/heads/main/ValveIcon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka One" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/script.js"></script>
+  </head>
+  
+  <div class="Title">
+    <img src="https://raw.githubusercontent.com/fizzy-gamer/ValveCalculator/refs/heads/main/ValveIcon.png">
+  </div>
+
+  <div class="Backing" id="ImportMenu" style="display:none;">
+    <dialog id="ImportBox" class="ImportMenu">
+      <input class="ImportData" type="text" id="ImportDataInput">
+      <button class="ImportButton" id="Import">Import Data JSON</button>
+    </dialog>
+  </div>
+
+
+  <div class="Menu">
+    <h2>⚙️<u class="GreyText">Current Splits</u>⚙️</h2>
+    <span class="GreenText">• Leaving Machines Blank counts as 0 Machines!</span>
+    <div class="OptionButtons">
+      <button class="ControlButton" id="AddSplit">Add Split</button>
+      <button class="ControlButton" id="RemoveSplit">Remove Split</button>
+      <button class="ControlButton" id="ClearSplits">Clear Splits</button>
+      <button class="ControlButton" id="ExportData">Export Data</button>
+      <button class="ControlButton" id="ImportData">Import Data</button>
+    </div>
+    <div class="Buttons" id="SplitButtons"></div>
+  </div>
+  </body>
+
+  <div class="RatesMenu">
+    <h2>⚙️<u class="GreyText">Bypass Percentages</u>⚙️</h2>
+    <span class="OrangeText">Valve Control (In order of pipeline) | Bypass Percentage</span>
+    <div id="BypassPercentages">
+      <span class="RedText">If you see this then something broke for some reason</span>
+    </div>
+  </div>
+  
+  <p class="Footer">
+    <a href="https://github.com/fizzy-gamer/ValveCalculator">Source Code</a>
+    <span class="GreyText">• Calculator made by</span>
+    <a href="https://github.com/fizzy-gamer">@fizzygamer</a>
+  </p>
+</html>
